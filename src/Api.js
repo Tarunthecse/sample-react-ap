@@ -73,7 +73,7 @@ export default class Api extends React.Component {
           <tbody>
             <tr>
               <td>
-                <input type="text" placeholder="Enter the data" id="dataInput" /></td>
+                <input type="text" placeholder="Enter the int data" id="dataInput" /></td>
               <td>
                 <button onClick={(e) => this.push(e, document.getElementById("dataInput").value)}>Push</button></td>
               <td>
