@@ -10,7 +10,7 @@ export default class Api extends React.Component {
   pop(e) {
     this.setState({ dataPushed: false });
     this.setState({ emptyData: false });
-    axios.delete(`http://localhost:8080/pop`)
+    axios.delete(`http://172.17.0.2:8080/pop`)
       .then(res => {
         console.log(res);
         console.log(res.data);
@@ -28,7 +28,7 @@ export default class Api extends React.Component {
   peek(e) {
     this.setState({ dataPushed: false });
     this.setState({ emptyData: false });
-    axios.get(`http://localhost:8080/peek`)
+    axios.get(`http://172.17.0.2:8080/peek`)
       .then(res => {
         console.log(res);
         console.log(res.data);
@@ -45,7 +45,7 @@ export default class Api extends React.Component {
     this.setState({ emptyData: false });
     if (data) {
       document.getElementById("dataInput").value = '';
-      let url = "http://localhost:8080/push/" + data;
+      let url = "http://172.17.0.2:8080/push/" + data;
       axios.post(url)
         .then(res => {
           console.log(res);
