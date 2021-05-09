@@ -10,6 +10,8 @@ Then you need to run:
 
 ### `npm start`
 
+## App will run on http://localhost:3000
+
 Below are the screenshot of UI, which you will see. Here we have 3 buttons i.e Push, Pop & Peek.
 
 Internally they will be calling the Api's from docker image. So please clone the java code from https://github.com/Tarunthecse/stack-implementation-in-java and run the docker image. For now endpoints are hardcoded.
